@@ -1,0 +1,28 @@
+package sesliHarfler;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		char[] kalinSesliler = { 'a', 'A', 'ı', 'I', 'o', 'O', 'u', 'U' };
+		char[] inceSesliler = { 'e', 'E', 'i', 'İ', 'ö', 'Ö', 'ü', 'Ü' };
+
+		char harf = 'E';
+
+		for (int i = 0; i < kalinSesliler.length; i++) {
+			if (harf == kalinSesliler[i]) {
+				System.out.println(harf + " harfi kalın bir sesli harftir.");
+				return;
+			}
+		}
+		for (int i = 0; i < inceSesliler.length; i++) {
+			if (harf == inceSesliler[i]) {
+				System.out.println(harf + " harfi ince bir sesli harftir.");
+				return;
+			}
+		}
+		System.out.println("Lütfen sesli harf giriniz.");
+
+	}
+
+}
